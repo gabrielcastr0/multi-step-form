@@ -45,7 +45,7 @@ const formReducer = (state: State, action: Action) => {
     case FormActions.setCurrentStep:
       return {...state, currentStep: action.payload};
     case FormActions.setName:
-      return {...state, currentStep: action.payload};
+      return {...state, name: action.payload};
     case FormActions.setLevel:
       return {...state, level: action.payload};
     case FormActions.setEmail:

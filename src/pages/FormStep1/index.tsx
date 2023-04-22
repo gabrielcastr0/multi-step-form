@@ -1,10 +1,53 @@
 import * as Styled from './styled';
+import Theme from '../../components/Theme';
+import { useNavigate } from 'react-router-dom';
+import { useForm, FormActions} from '../../contexts/FormContext';
+import { ChangeEvent, useEffect } from 'react';
 
 const FormStep1 = () => {
+  const navigate = useNavigate();
+  const { state, dispatch } = useForm();
+
+  useEffect(()=> {
+    dispatch({
+      type: FormActions.setCurrentStep,
+      payload: 1,
+    })
+  }, [])
+
+  const handleNextStep = () => {
+    navigate('/step2');
+  }
+
+  const handleNameChange = (event: ChangeEvent<HTMLInputElement>) => {
+    dispatch({
+      type: FormActions.setName,
+      payload: event.target.value,
+    });
+  }
+
   return(
-    <Styled.Container>
-      <h1>FormStep1</h1>
-    </Styled.Container>
+    <Theme>
+      <Styled.Container>
+        <p>Passo 1/3</p>
+        <h1>Vamos começar com seu nome</h1>
+        <p>Preencha o campo abaixo com seu nome completo</p>
+
+        <hr/>
+
+        <label htmlFor="">
+          Seu nome completo
+          <input 
+            type="text" 
+            autoFocus
+            value={state.name}
+            onChange={handleNameChange}
+          />
+        </label>
+
+        <button onClick={handleNextStep}>Próximo</button>
+      </Styled.Container>
+    </Theme>
   )
 }
 

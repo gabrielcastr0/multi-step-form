@@ -16,7 +16,11 @@ const FormStep1 = () => {
   }, [])
 
   const handleNextStep = () => {
-    navigate('/step2');
+    if(state.name !== ''){
+      return navigate('/step2');
+    }
+
+    alert("Preencha seus dados!");
   }
 
   const handleNameChange = (event: ChangeEvent<HTMLInputElement>) => {

@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div<{ selected: boolean; }>`
   display: flex;
-  border: 2px solid ${props => props.selected ? '#25cd89' : '#16195c'};
+  border: 2px solid ${props => props.selected ? '#25CD89' : '#16195C'};
   border-radius: 10px;
   padding: 20px;
   margin-bottom: 15px;

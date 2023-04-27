@@ -15,7 +15,7 @@ export const Container = styled.main`
   hr{
     height: 1px;
     border: 0;
-    background: #16195c;
+    background: #16195C;
     margin: 30px 0;
   }
 
@@ -27,24 +27,24 @@ export const Container = styled.main`
       margin-top: 7px;
       box-sizing: border-box;
       width: 100%;
-      padding: 20px 10px;
-      border: 2px solid #25cd89;
-      border-radius: 10px;
+      padding: 10px;
+      border: 2px solid #25CD89;
+      border-radius: 5px;
       color: #fff;
       outline: 0;
       font-size: 15px;
-      background: #02044a;
+      background: #02044A;
     }
   }
 
   button{
-    background: #25cd89;
+    background: #25CD89;
     color: #fff;
     font-size: 14px;
     font-weight: bold;
     padding: 20px 40px;
     border: 0;
-    border-radius: 30px;
+    border-radius: 5px;
     cursor: pointer;
     margin-top: 30px;
   }

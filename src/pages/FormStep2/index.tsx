@@ -2,7 +2,7 @@ import * as Styled from './styled';
 import Theme from '../../components/Theme';
 import { useNavigate, Link } from 'react-router-dom';
 import { useForm, FormActions} from '../../contexts/FormContext';
-import { ChangeEvent, useEffect } from 'react';
+import {  useEffect } from 'react';
 import SelectOption from '../../components/SelectOption';
 
 const FormStep2 = () => {
@@ -22,7 +22,7 @@ const FormStep2 = () => {
 
   const handleNextStep = () => {
     if(state.name !== ''){
-      return navigate('/step2');
+      return navigate('/step3');
     }
 
     alert("Preencha seus dados!");

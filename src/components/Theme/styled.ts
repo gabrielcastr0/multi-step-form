@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  background: #02044a;
+  background-color: #02044A;
   color: #fff;
   min-height: 100vh;
 `;
@@ -21,7 +21,7 @@ export const Steps = styled.div`
 
 export const Sidebar = styled.div`
   width: 250px;
-  border-right: 1px solid #16195c;
+  border-right: 1px solid #16195C;
 `;
 
 export const Page = styled.div`

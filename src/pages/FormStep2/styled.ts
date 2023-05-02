@@ -46,7 +46,6 @@ export const Container = styled.main`
     border: 0;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 30px;
   }
 
   .backButton{
@@ -54,5 +53,15 @@ export const Container = styled.main`
     text-decoration: none;
     padding: 20px 40px;
     color: #B8B8D4;
+  }
+`;
+
+export const WrapperButtons = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 20px;
+
+  @media (max-width: 425px){
+    justify-content: center;
   }
 `;

@@ -45,7 +45,7 @@ export const FieldsArea = styled.div`
 `;
 
 export const Label = styled.label`
-  font-size: 13px;
+  font-size: 14px;
 `;
 
 export const Input = styled.input`

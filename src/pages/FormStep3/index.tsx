@@ -22,7 +22,7 @@ const FormStep3 = () => {
 
   const handleNextStep = () => {
     if(state.email !== '' && state.github !== ''){
-      return console.log(state);
+      return navigate('/step4');
     }
 
     alert("Preencha os dados!");
@@ -45,7 +45,7 @@ const FormStep3 = () => {
   return(
     <Theme>
       <Styled.Container>
-        <p>Passo 3/3</p>
+        <p>Passo 3/4</p>
         <h1>Legal {state.name}, onde te achamos?</h1>
         <p>Preencha as informações abaixo para conseguirmos entrar em contato.</p>
 
@@ -71,8 +71,10 @@ const FormStep3 = () => {
           </Styled.Label>
         </Styled.FieldsArea>
 
-        <Link to="/step2" className="backButton">Voltar</Link>
-        <button onClick={handleNextStep}>Revisar dados</button>
+        <Styled.WrapperButtons>
+          <Link to="/step2" className="backButton">Voltar</Link>
+          <button onClick={handleNextStep}>Revisar dados</button>
+        </Styled.WrapperButtons>
       </Styled.Container>
     </Theme>
   )

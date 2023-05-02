@@ -38,7 +38,7 @@ const FormStep2 = () => {
   return(
     <Theme>
       <Styled.Container>
-        <p>Passo 2/3</p>
+        <p>Passo 2/4</p>
         <h1>{state.name}, o que melhor descreve você?</h1>
         <p>Escolha a opção que melhor condiz com seu estado atual, profissionalmente.</p>
 
@@ -58,8 +58,10 @@ const FormStep2 = () => {
           onClick={() => setLevel(1)}
         />
 
-        <Link to="/" className="backButton">Voltar</Link>
-        <button onClick={handleNextStep}>Próximo</button>
+        <Styled.WrapperButtons>
+          <Link to="/" className="backButton">Voltar</Link>
+          <button onClick={handleNextStep}>Próximo</button>
+        </Styled.WrapperButtons>
       </Styled.Container>
     </Theme>
   )

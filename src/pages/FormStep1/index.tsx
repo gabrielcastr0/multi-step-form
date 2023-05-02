@@ -33,7 +33,7 @@ const FormStep1 = () => {
   return(
     <Theme>
       <Styled.Container>
-        <p>Passo 1/3</p>
+        <p>Passo 1/4</p>
         <h1>Vamos começar com seu nome</h1>
         <p>Preencha o campo abaixo com seu nome completo</p>
 
@@ -49,7 +49,9 @@ const FormStep1 = () => {
           />
         </label>
 
-        <button onClick={handleNextStep}>Próximo</button>
+        <Styled.WrapperButtons>
+          <button onClick={handleNextStep}>Próximo</button>
+        </Styled.WrapperButtons>
       </Styled.Container>
     </Theme>
   )

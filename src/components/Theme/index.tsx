@@ -41,6 +41,15 @@ const Theme = ({children}: Props) => {
               path="/step3"
               active={state.currentStep === 3}
             />
+
+
+            <SidebarItem 
+              title="Revisar"
+              description="Revise seus dados"
+              icon="review"
+              path="/step4"
+              active={state.currentStep === 4}
+            />
           </Styled.Sidebar>
 
           <Styled.Page>

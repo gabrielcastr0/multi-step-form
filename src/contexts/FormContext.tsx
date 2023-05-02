@@ -1,6 +1,6 @@
 import { createContext, ReactNode, useContext, useReducer } from "react";
 
-type State = {
+export type State = {
   currentStep: number;
   name: string;
   level: 0 | 1;
@@ -59,7 +59,7 @@ const formReducer = (state: State, action: Action) => {
 
 export const FormProvider = ({children}: FormProviderProps) => {
   const [state, dispatch] = useReducer(formReducer, initialData);
-  const value = {state, dispatch};
+  const value = { state, dispatch };
 
   return(
     <FormContext.Provider value={value}>

@@ -46,6 +46,11 @@ export const Container = styled.main`
     border: 0;
     border-radius: 5px;
     cursor: pointer;
-    margin-top: 30px;
   }
+`;
+
+export const WrapperButtons = styled.div`
+  display: flex;
+  justify-content: flex-end;
+  padding-top: 30px;
 `;

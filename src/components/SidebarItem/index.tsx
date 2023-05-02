@@ -3,6 +3,7 @@ import * as Styled from './styled';
 import { ReactComponent as ProfileIcon } from '../../assets/profile.svg';
 import { ReactComponent as BookIcon } from '../../assets/book.svg';
 import { ReactComponent as MailIcon } from '../../assets/mail.svg';
+import { ReactComponent as ReviewIcon } from '../../assets/review.svg';
 
 
 type Props = {
@@ -26,6 +27,7 @@ const SidebarItem = ({title, description, icon, path, active}: Props) => {
           {icon === 'profile' && <ProfileIcon fill="white" width={24} height={24} />}
           {icon === 'book' && <BookIcon fill="white" width={24} height={24} />}
           {icon === 'mail' && <MailIcon fill="white" width={24} height={24} />}
+          {icon === 'review' && <ReviewIcon fill="white" width={24} height={24} />}
         </Styled.IconArea>
 
         <Styled.Point active={active}></Styled.Point>

@@ -27,14 +27,14 @@ export const Title = styled.div`
 export const Description = styled.div`
   text-align: right;
   font-size: 13px;
-  color: #b8b8d4;
+  color: #c6cdff;
 `;
 
 export const IconArea = styled.div<{ active: boolean; }>`
   width: 50px;
   height: 50px;
   border-radius: 50%;
-  background: ${props => props.active ? '#25CD89' : '#494A7C'};
+  background: ${props => props.active ? '#83b8ff' : '#248bd6'};
   display: flex;
   justify-content: center;
   align-items: center;
@@ -43,9 +43,9 @@ export const IconArea = styled.div<{ active: boolean; }>`
 export const Point = styled.div<{ active: boolean; }>`
   width: 6px;
   height: 6px;
-  border: 3px solid #494A7C;
+  border: 3px solid #83b8ff;
   border-radius: 50%;
   margin-left: 30px;
   margin-right: -6px;
-  background: ${props => props.active ? '#25CD89' : '#02044A'};
+  background: ${props => props.active ? '#0f6bae' : '#248bd6'};
 `;

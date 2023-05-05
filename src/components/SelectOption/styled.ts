@@ -2,7 +2,7 @@ import styled from 'styled-components';
 
 export const Container = styled.div<{ selected: boolean; }>`
   display: flex;
-  border: 2px solid ${props => props.selected ? '#25CD89' : '#16195C'};
+  border: 2px solid ${props => props.selected ? '#c6cdff' : '#248bd6'};
   border-radius: 10px;
   padding: 20px;
   margin-bottom: 15px;
@@ -10,7 +10,7 @@ export const Container = styled.div<{ selected: boolean; }>`
   cursor: pointer;
 
   &:hover{
-    border: 2px solid #496459;
+    border: 2px solid #83b8ff;
   }
 `;
 

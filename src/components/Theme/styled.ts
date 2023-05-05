@@ -1,13 +1,10 @@
 import styled from 'styled-components';
 
 export const Container = styled.div`
-  background-color: #02044A;
+  background-color: #0f6bae;
   color: #fff;
   min-height: 100vh;
-
-  @media (max-width: 425px){
-    padding: 30px;
-  }
+  padding: 30px;
 `;
 
 export const Area = styled.div`
@@ -30,7 +27,7 @@ export const Steps = styled.div`
 
 export const Sidebar = styled.div`
   width: 250px;
-  border-right: 1px solid #16195C;
+  border-right: 1px solid #248bd6;
 `;
 
 export const Page = styled.div`

@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Container = styled.main`
   p{
     font-size: 13px;
-    color: #b8b8d4;
+    color: #c6cdff;
   }
 
   h1{
@@ -15,12 +15,12 @@ export const Container = styled.main`
   hr{
     height: 1px;
     border: 0;
-    background: #16195C;
+    background: #248bd6;
     margin: 30px 0;
   }
 
   button{
-    background: #25CD89;
+    background: #248bd6;
     color: #fff;
     font-size: 14px;
     font-weight: bold;
@@ -34,7 +34,7 @@ export const Container = styled.main`
     font-size: 16px;
     text-decoration: none;
     padding: 20px 40px;
-    color: #B8B8D4;
+    color: #c6cdff;
   }
 `;
 
@@ -54,12 +54,12 @@ export const Input = styled.input`
   box-sizing: border-box;
   width: 100%;
   padding: 10px;
-  border: 2px solid #25CD89;
+  border: 2px solid #83b8ff;
   border-radius: 10px;
   color: #fff;
   outline: 0;
   font-size: 15px;
-  background: #02044A;
+  background: #0f6bae;
 `;
 
 export const WrapperButtons = styled.div`

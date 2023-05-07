@@ -62,7 +62,7 @@ const FormStep4 = () => {
         </Styled.FieldsArea>
 
         <Styled.WrapperButtons>
-          <Link to="/step2" className="backButton">Voltar</Link>
+          <Link to="/step3" className="backButton">Voltar</Link>
           <button onClick={handleNextStep}>Finalizar cadastro</button>
         </Styled.WrapperButtons>
       </Styled.Container>
